@@ -1,10 +1,12 @@
 baseURL = "https://griffinfoster.dev/"
 languageCode = "en-us"
 title = "Griffin Foster's Portfolio"
-theme = "ananke"
+theme = "academic"
 
 [params]
-  description = "Showcasing projects and homework assignments."
+  description = "Showcasing projects and homework assignments for my career portfolio."
+  author = "Griffin Foster"
+  # Add more parameters as needed
 
 [menu]
   [[menu.main]]
@@ -12,14 +14,25 @@ theme = "ananke"
     url = "/"
     weight = 1
   [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
     name = "Projects"
     url = "/projects/"
-    weight = 2
+    weight = 3
   [[menu.main]]
     name = "Assignments"
     url = "/assignments/"
-    weight = 3
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
 
 [markup]
   [markup.highlight]
     style = "monokai"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
