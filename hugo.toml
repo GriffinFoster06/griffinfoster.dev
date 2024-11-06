@@ -1,0 +1,25 @@
+baseURL = "https://griffinfoster.dev/"
+languageCode = "en-us"
+title = "Griffin Foster's Portfolio"
+theme = "ananke"
+
+[params]
+  description = "Showcasing projects and homework assignments."
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+  [[menu.main]]
+    name = "Assignments"
+    url = "/assignments/"
+    weight = 3
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
